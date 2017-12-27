@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.rizwan.mynotificationapp.Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary">
+
+            <TimePicker
+                android:id="@+id/timePicker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:numbersTextColor="#FFFFFF"
+                android:background="@color/colorPrimary"
+                android:numbersBackgroundColor="#BDBDBD" />
+
+
+            <TextView
+                android:id="@+id/txt_support"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="18dp"
+                android:layout_marginLeft="16dp"
+                android:text="Support"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cb_timePicker"
+                android:layout_centerHorizontal="true"
+                android:text="Save" />
+
+
+            <CheckBox
+                android:id="@+id/cb_default"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timePicker"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="16dp"
+                android:shadowColor="#ffffff"
+                android:checked="true"
+                android:backgroundTint="#BDBDBD"
+                android:background="#BDBDBD"
+                android:text="Set Application Default"
+                android:textColor="#ffffff" />
+
+            <CheckBox
+                android:id="@+id/cb_timePicker"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/cb_default"
+                android:layout_alignStart="@+id/cb_default"
+                android:layout_below="@+id/cb_default"
+                android:backgroundTint="#BDBDBD"
+                android:background="#BDBDBD"
+                android:text="Set User Defined Time"
+                android:textColor="#ffffff" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
